@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <link href="styles.css" rel="stylesheet" />
+    <title>My Webpage</title>
+  </head>
+  <body>
+    <header class="bg-dark">
+      <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">English with Emily</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="join.html">Join us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="join" class="gradient-color small-padding">
+        <h4 class="centered">Join us!</h4>
+
+        <div class="container text-center small-width">
+          <div class="row small-padding pointer-cursor bold-text">
+            <div class="col" id="register">Register</div>
+            <div class="col" id="login">Login</div>
+          </div>
+
+          <!-- login form -->
+          <form action="#" id="login_form" class="form">
+            <div class="mb-3 row">
+              <label for="staticEmail" class="col-sm-2 col-form-label"
+                >Email</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="staticEmail"
+                  placeholder="email@example.com"
+                />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="inputPassword" class="col-sm-2 col-form-label"
+                >Password</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword"
+                />
+              </div>
+              <div class="mb-3 row"></div>
+              <input type="submit" id="login-btn" value="Login" />
+            </div>
+          </form>
+
+          <!-- Register form  -->
+          <form action="#" id="register_form" class="form hidden">
+            <div class="mb-3 row">
+              <label for="firstname" class="col-sm-2 col-form-label"
+                >First Name</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstname"
+                  placeholder="First Name"
+                />
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <label for="lastname" class="col-sm-2 col-form-label"
+                >Last Name</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastname"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="staticEmail_register" class="col-sm-2 col-form-label"
+                >Email</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  autocomplete="off"
+                  id="staticEmail_register"
+                  placeholder="email@example.com"
+                />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label
+                for="inputPassword_register"
+                class="col-sm-2 col-form-label"
+                >Password</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword_register"
+                  placeholder="password"
+                />
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <label
+                for="comfirmPassword_register"
+                class="col-sm-2 col-form-label"
+                >Confirm Password</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="comfirmPassword_register"
+                  placeholder="confirm password"
+                />
+              </div>
+            </div>
+
+            <input type="submit" id="register-btn" value="Register" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="homepage.js"></script>
+  </body>
+</html>

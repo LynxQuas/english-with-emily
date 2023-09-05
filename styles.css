@@ -1,0 +1,204 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+}
+
+header {
+  padding: 0.5rem 0;
+}
+
+svg {
+  width: 5rem;
+}
+
+a {
+  text-decoration: unset;
+  color: white;
+}
+
+footer {
+  background: linear-gradient(90deg, #2d2566, #2e5524);
+  color: #fff;
+  text-align: center;
+}
+
+#title {
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+#register_form {
+  position: relative;
+}
+
+#login_form {
+  position: relative;
+}
+
+.btn-a:hover {
+  color: #ccc;
+}
+
+#join {
+  position: relative;
+}
+
+#about-us {
+  position: relative;
+}
+
+#contact {
+  position: relative;
+}
+
+#register-btn,
+#login-btn {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #0d6efd;
+}
+
+#register-btn:hover {
+  color: #ccc;
+  background-color: #0d6efc;
+}
+
+#login-btn:hover {
+  color: #ccc;
+  background-color: #0d6efc;
+}
+#btn_join:hover {
+  color: #ccc;
+  background-color: #0d6efc;
+}
+
+#btn_join {
+  padding: 0.5rem 2rem;
+  background-color: #0d6efd;
+  border-radius: 10px;
+  color: #fff;
+}
+
+/* uilities classe */
+
+.container {
+  padding: 2rem 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.centered {
+  margin: 1rem;
+  text-align: center;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.underline {
+  border-bottom: 3px solid #a23;
+  margin: 0 10px;
+}
+
+.form {
+  position: absolute;
+}
+
+.hero {
+  width: 310px;
+  border-radius: 10px;
+}
+
+.small-margin-top {
+  margin-top: 1rem;
+}
+
+.large-margin-top {
+  margin-top: 4rem;
+}
+
+.large-text {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.block {
+  display: block;
+}
+
+.small-padding {
+  padding: 2rem;
+}
+
+.pointer-cursor {
+  cursor: pointer;
+}
+
+.gradient-color {
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=2d2566&c2=2e5524&gt=l&gd=dtr
+*/
+  background: linear-gradient(90deg, #2d2566, #2e5524);
+}
+
+.active-form {
+  color: #1a3f;
+}
+
+.active {
+  color: #fff;
+}
+
+@media only screen and (min-width: 600px) {
+  section {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .centered-item {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .side-by-side {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .small-width {
+    width: 60%;
+  }
+
+  .large-padding {
+    padding: 6rem;
+  }
+}
